@@ -37,7 +37,7 @@
           body: f_body.val()
         },
         success: function(response) {
-          $('form-contacts').reset();
+          $('.form-contacts').reset();
           alert ('Сообщение успешно отправлено!');
         }
       });
