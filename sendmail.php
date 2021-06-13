@@ -5,7 +5,7 @@
   require 'PHPMailer/src/Exception.php';
   require 'PHPMailer/src/PHPMailer.php';
 
-  $mail = new PHPMailer();
+  $mail = new PHPMailer(true);
   $mail->CharSet = "UTF-8";
   $mail->setLanguage('ru', 'phpmailer/language/');
   $mail->IsHTML(true);
@@ -25,8 +25,8 @@
     $body.= '<p>E-mail: '.$_POST['email'].'</p>';
   }
 
-  if(trim(!empty($_POST['message']))) {
-    $body.= '<p>'.$_POST['message'].'</p>';
+  if(trim(!empty($_POST['body']))) {
+    $body.= '<p>'.$_POST['body'].'</p>';
   }
 
   $mail->Body = $body;
