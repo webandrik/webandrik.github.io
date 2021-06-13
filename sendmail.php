@@ -5,7 +5,7 @@
   require 'PHPMailer/src/Exception.php';
   require 'PHPMailer/src/PHPMailer.php';
 
-  $mail = new PHPMailer(true);
+  $mail = new PHPMailer();
   $mail->CharSet = "UTF-8";
   $mail->setLanguage('ru', 'phpmailer/language/');
   $mail->IsHTML(true);
