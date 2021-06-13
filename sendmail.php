@@ -11,7 +11,7 @@
   $mail->IsHTML(true);
 
   $mail->setFrom('info@site.com', 'Egorov Andrey');
-  $mail->addAddress('admin@site.com');
+  $mail->addAddress('babai62403@gmail.com');
 
   $mail->Subject = 'Письмо с формы обратной связи';
 
