@@ -6,14 +6,19 @@
     $('body').css('overflow', 'auto');
     $('.loader').fadeOut();
   });
+
   $('.hamburger-btn').on('click', function(event) {
-    $('.hamburger-btn').toggleClass('open');
-    $('body').toggleClass('menu-open');
-    $('.header__nav').toggleClass('is-open');
+    hamburgerToggle();
   });
+
   $('.js-scroll-link').on('click', function(event) {
     event.preventDefault();
+    if($('.hamburger-btn').hasClass('open')) {
+      hamburgerToggle();
+    }
+
     var $this_el = $(this);
+
     $('html, body').stop().animate({
         scrollTop: $($this_el.attr('href')).offset().top - 0
     }, 1000);
@@ -25,6 +30,7 @@
     let f_email = $('#email');
     let f_subject = $('#subject');
     let f_body = $('#body');
+    
     if(validateInput($('#name')) && validateInput($('#email')) && validateInput($('#subject')) && validateInput($('#body'))) {
       $.ajax({
         url: 'sendmail.php',
@@ -37,7 +43,7 @@
           body: f_body.val()
         },
         success: function(response) {
-          $('.form-contacts').reset();
+          $('form-contacts').reset();
           alert ('Сообщение успешно отправлено!');
         }
       });
@@ -68,6 +74,12 @@
       input.css('border', '');
       return true;
     }
+  }
+
+  function hamburgerToggle() {
+    $('.hamburger-btn').toggleClass('open');
+    $('body').toggleClass('menu-open');
+    $('.header__nav').toggleClass('is-open');
   }
 
 })(jQuery);
