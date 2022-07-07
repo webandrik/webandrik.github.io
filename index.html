@@ -4,102 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/jquery.animatedheadline.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Title</title>
+  <title>Egorov Andrey</title>
 </head>
 <body>
   <div class="loader d-flex justify-center align-items-center">
-    <div class="loader__logo d-flex justify-center align-items-center">AV</div>
+    <div class="loader__logo d-flex justify-center align-items-center">EA</div>
   </div>
-  <div class="header gradient-bg">
-    <div class="header__photo d-flex align-items-center">
-      <img src="img/my-photo.jpg" alt="Egorov Andrey">
-    </div>
-    <div class="container d-flex">   
-      <div class="header__main">
-        <div class="header__top d-flex align-items-center">
-          <a href="/" class="header__logo d-flex align-items-center justify-center">
-            <span href="#">AV</span>
-          </a>
-          <ul class="header__nav d-flex" data-aos="fade-right" data-aos-duration="1000">
-            <li class="header__nav-item">
-              <a href="/" class="header__nav-link">Home</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#about" class="header__nav-link js-scroll-link">About</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#portfolio" class="header__nav-link js-scroll-link">Portfolio</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#contacts" class="header__nav-link js-scroll-link">Contact</a>
-            </li>
-          </ul>
-          <button class="hamburger-btn"></button>
-        </div>
-        <div class="header__bottom" data-aos="fade-right">
-          <ul class="advantages d-flex justify-center">
-            <li class="advantages__item">determination</li>
-            <li class="advantages__item">professionalism</li>
-            <li class="advantages__item">inventiveness</li>
-          </ul>
-        </div>
-      </div>
-      <div class="header__sidebar">
-        <div class="sidebar-top">
-          <ul class="sidebar-top__nav d-flex align-items-center justify-end">
-            <li class="sidebar-top__nav-item">
-              <a href="#" class="sidebar-top__nav-link"><i class="fab fa-telegram-plane"></i></a>
-            </li>
-            <li class="sidebar-top__nav-item">
-              <a href="#" class="sidebar-top__nav-link"><i class="far fa-envelope"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="sidebar-main">
-          <div class="sidebar-main__hero" data-aos="fade-left" data-aos-delay="300">
-            <h1 class="hero-title">
-              <span>Hey,</span>
-              <span>I'm Egorov Andrey</span>
-            </h1>
-            <div class="hero-desc">web-designer in ArtStudio</div>
-            <div class="hero-where">
-              <span class="hero-where__title">Where am I from ?</span>
-              <span class="hero-where__desc">I in Kharkiv, Ukraine</span>
-            </div>
-          </div>
-          <div class="sidebar-main__social" data-aos="fade-up" data-aos-delay="400">
-            <div class="social-title"><span>S.O.C.I.A.L</span></div>
-            <ul class="social-list d-flex align-items-center justify-center">
-              <li class="social-item d-flex align-items-center justify-center">
-                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li class="social-item d-flex align-items-center justify-center">
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="social-item d-flex align-items-center justify-center">
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-              </li>
+  <!-- Header -->
+  <header class="header">
+    <div class="container d-flex align-items-center">
+        <a class="logo" href="#"><span>EA</span></a>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="/">Home</a></li>
+                <li><a class="js-scroll-link" href="#about">About</a></li>
+                <li><a class="js-scroll-link" href="#portfolio">Portfolio</a></li>
+                <li><a class="js-scroll-link" href="#contacts">Contact</a></li>
             </ul>
-          </div>
-        </div>
+            <button class="hamburger-btn"></button>
+        </nav>
+    </div>
+    <div class="container hello-wrap">
+        <span class="hello-title">Hello!</span>
+        <h1 class="cd-headline clip">
+            <span class="blc">I'm </span>
+            <span class="cd-words-wrapper">
+              <b class="is-visible">Egorov Andrey</b>
+              <b class="is-hidden">Freelancer</b>
+              <b class="is-hidden">Web Designer</b>
+              <b class="is-hidden">Photographer</b>
+            </span>
+        </h1>
+        <ul class="social-list d-flex align-items-center">
+          <li>
+            <a href="#" class="social-item d-flex align-items-center justify-center"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#" class="social-item d-flex align-items-center justify-center"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" class="social-item d-flex align-items-center justify-center"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+    </div>
+    <a href="#" class="scroll-down"></a>
+  </header>
+  <!-- End Header -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section__title" data-aos="fade-bottom" data-aos-delay="300" >About <span class="color">Me</span></h2>
+    <div class="d-flex flex-wrap">
+      <div class="about-photo">
+        <img src="img/about-photo.jpg" alt="">
+      </div>
+      <div class="about__text" data-aos="fade-up" data-aos-offset="100">
+        <p>
+          I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+        </p>
+        <p>
+          This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
+        </p>
+        <p><a href="#" class="btn btn--download" data-aos="fade-up">Download Resume</a></p>
       </div>
     </div>
-  </div><!-- end header -->
-  <section id="about" class="section about">
-    <h2 class="section__title" data-aos="fade-bottom" data-aos-delay="300" >About <span class="color">Me</span></h2>
-    <div class="about__text" data-aos="fade-up" data-aos-offset="200">
-      <p>
-        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
-      </p>
-      <p>
-        This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
-      </p>
-      <p><a href="#" class="btn btn--download" data-aos="fade-up">Download Resume</a></p>
+    
     </div>
+    
   </section><!-- end about -->
   <section id="portfolio" class="section portfolio">
     <h2 class="section__title" data-aos="zoom-in">My <span class="color">Portfolio</span></h2>
@@ -205,7 +181,7 @@
       <h2 class="section__title" data-aos="zoom-in">My <span class="color">Contacts</span></h2>
       <div class="d-flex">
         <div class="cell-lg-2 contacts-info" data-aos="fade-up">
-          <div class="contacts-info__title">Контакты</div>
+          <div class="contacts-info__title">Contacts</div>
           <div class="contacts-info__desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Totam, possimus asperiores, cupiditate laudantium alias impedit dolore animi 
@@ -247,6 +223,7 @@
     Copyright (C) Egorov Andrey. All rights reserved.
   </footer>
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/animated.headline.js"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>

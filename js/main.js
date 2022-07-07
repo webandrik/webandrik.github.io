@@ -6,33 +6,47 @@
     $('body').css('overflow', 'auto');
     $('.loader').fadeOut();
   });
+  $(window).scroll(function() {
+	
+	var distance = $(this).scrollTop();
 
-  $('.hamburger-btn').on('click', function(event) {
-    hamburgerToggle();
+	$(".header__photo img").css({
+		"transform" : "translate(0%, -"+distance/5 + "%"
+	});
+	
   });
-
+  $('.hamburger-btn').on('click', function(event) {
+    $('.hamburger-btn').toggleClass('open');
+    $('body').toggleClass('menu-open');
+    $('.main-menu').toggleClass('is-open');
+  });
   $('.js-scroll-link').on('click', function(event) {
     event.preventDefault();
-    if($('.hamburger-btn').hasClass('open')) {
-      hamburgerToggle();
-    }
-
     var $this_el = $(this);
-
     $('html, body').stop().animate({
         scrollTop: $($this_el.attr('href')).offset().top - 0
     }, 1000);
   });
+  
+  $('.scroll-down').on('click', function(e){
+  e.preventDefault();
+  let distance = $('.about').offset().top;
+  jQuery('html, body').stop().animate({
+					scrollTop: distance
+				}, 500);
+});
 
   $('#submit').on('click', function(e){
     e.preventDefault();
+	//if(email_test(document.getElementById('email'))) {alert('Валидно!');}
     let f_name = $('#name');
     let f_email = $('#email');
     let f_subject = $('#subject');
     let f_body = $('#body');
-    
-    if(validateInput($('#name')) && validateInput($('#email')) && validateInput($('#subject')) && validateInput($('#body'))) {
+    if(validateInput($('#name')) && validateInput($('#email')) && email_test(f_email)  && validateInput($('#subject')) && validateInput($('#body'))) {
+		
       $.ajax({
+		  
         url: 'sendmail.php',
         method: 'POST',
         dataType: 'JSON',
@@ -43,11 +57,19 @@
           body: f_body.val()
         },
         success: function(response) {
-          $('form-contacts').reset();
+			console.log('success');
+          $('.form-contacts')[0].reset();
           alert ('Сообщение успешно отправлено!');
+        },
+		error: function(error) {
+			console.log(error);
+         
         }
       });
     }
+	else if(!email_test(f_email)) {
+	  alert('Введите правильный e-mail');
+	}
     else {
       alert('Не заполнены поля.');
     }
@@ -75,11 +97,16 @@
       return true;
     }
   }
-
-  function hamburgerToggle() {
-    $('.hamburger-btn').toggleClass('open');
-    $('body').toggleClass('menu-open');
-    $('.header__nav').toggleClass('is-open');
+  
+  function email_test(input) {
+	  if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.val())){
+		  return true;
+	  }
+	  
+	  else {
+		  input.css('border', '1px solid red');
+		  return false;
+	  }
   }
 
 })(jQuery);
