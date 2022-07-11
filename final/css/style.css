@@ -562,6 +562,27 @@ animation: scroll-down 2s ease-in-out infinite;
   display: block;
 }
 
+.designation {
+  margin-top: 50px;
+}
+
+.designation-item {
+  padding: 0 20px;
+  position: relative;
+}
+
+.designation-item:before {
+  position: absolute;
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-color: transparent;
+  left: 0;
+  top: 3%;
+  border-radius: 50%;
+  border: 1px solid #0e108b;
+}
+
 .sidebar-main {
   overflow: hidden;
 }
