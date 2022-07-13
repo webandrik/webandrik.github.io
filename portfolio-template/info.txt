@@ -1,0 +1,3 @@
+Replace e-mail address from file sendmail.php
+
+$mail->addAddress('info@mysite.com');
