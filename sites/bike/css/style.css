@@ -7384,3 +7384,8 @@ button {
         display: none;
       }
     }
+     @media (max-width: 575px) and (orientation: landscape) {
+      .inner {
+        height: auto;
+      }
+    }
