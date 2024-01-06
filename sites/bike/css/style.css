@@ -7289,6 +7289,9 @@ button {
        .footer-nav__item + .footer-nav__item {
         margin-left: 50px;
       }
+      .btn--lg {
+        whites-space: nowrap;
+      }
       .btn-app-store {
         margin: 10px 0;
       }
