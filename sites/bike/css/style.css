@@ -7290,7 +7290,7 @@ button {
         margin-left: 50px;
       }
       .btn--lg {
-        whites-space: nowrap;
+        white-space: nowrap;
       }
       .btn-app-store {
         margin: 10px 0;
