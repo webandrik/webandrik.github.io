@@ -7278,7 +7278,7 @@ button {
 
     @media (max-width: 1199px) {
       .inner-carousel__slide-title {
-        font-size: 7rem;
+        font-size: 6rem;
       }
       .action-section__top .container::after {
         display: none;
