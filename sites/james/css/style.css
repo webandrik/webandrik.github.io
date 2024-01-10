@@ -603,6 +603,9 @@ img {
     .header-top {
         padding-left: 20px;
     }
+   .header-main {
+        margin-top: 100px;
+    }
     .nav>li+li {
         margin-left: 20px;
     }
@@ -621,10 +624,6 @@ img {
     .header-top {
         position: relative;
         z-index: 1000;
-    }
-
-    .header-main {
-        margin-top: 100px;
     }
 
     .slicknav_menu {
