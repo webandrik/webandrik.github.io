@@ -729,6 +729,9 @@ img {
     .cell-6 {
         width: 100%;
     }
+    .header:after {
+        width: 70%;
+    }	
     .about-text {
         padding-top: 20px;
     }
