@@ -354,6 +354,10 @@ img {
     background-image: linear-gradient(to right, transparent, #e95252 50%, transparent);
 }
 
+.about {
+    overflow: hidden;
+}
+
 .about-photo {
     border-radius: 10px;
     box-shadow: 1px 1px 10px #030303;
