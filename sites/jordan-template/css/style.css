@@ -375,10 +375,6 @@ body {
 }
 
 @media (max-width: 479px) {
-    .header__title {
-        margin-top: 100px;
-    }
-
     .header__social {
         left: 10px;
     }
