@@ -18,13 +18,14 @@ body {
 .header__main {
     position: relative;
     z-index: 50;
-    height: 100%;
 }
 
-.header__main-content {
-    display: flex;
-    align-items: center;
-    height: 100%;
+.header__main {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .navbar {
@@ -79,7 +80,7 @@ body {
 
 .header__title {
     text-align: center;
-    margin-top: -200px;
+    /* margin-top: -200px; */
     font-size: 3.5rem;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -368,7 +369,7 @@ body {
 
 @media (max-width: 800px) {
     .header__title {
-       font-size: 2rem;
+       font-size: 1.5rem;
        max-width: 50%; 
     }
 }
