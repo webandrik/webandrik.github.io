@@ -989,6 +989,9 @@ img {
         width: 310px;
         height: 327px;
     }
+    .footer__grafic {
+        margin-left: 30px;
+    }
     .footer__form-title {
         font-size: 32px;
     }
@@ -1115,10 +1118,10 @@ img {
     .footer__menu-top {
         margin-right: 0;
     }
-    .footer__grafic {
-        margin-left: 30px;
-    }
     .footer__grafic::after {
         right: -30px;
+    }
+    .footer__item-bottom {
+        margin-bottom: 10px;
     }
 }
