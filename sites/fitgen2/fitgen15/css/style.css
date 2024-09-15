@@ -1116,6 +1116,9 @@ img {
         z-index: 100;
         width: 380px;
     }
+    .testimonials__item {
+        max-width: 280px;
+    }
     .footer__menu-top {
         margin-right: 0;
     }
