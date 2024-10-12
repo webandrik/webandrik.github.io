@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gomaid.</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top d-flex align-items-center">
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <nav class="menu header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--active" href="#pageHome">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#pageAbout">About Us</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#pageReviews">Reviews</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#pageContacts">Contacts</a>
+                        </li>
+                    </ul>
+                    <button class="hamburger">
+                        <span class="hamburger__line"></span>
+                    </button>
+                </nav>
+            </div>
+            <div id="pageHome" class="header__content wow fadeIn">
+                <h1 class="header__title"><span class="text-decoration">The best</span> childcare & Home staff provider</h1>
+                <div class="header__desq">
+                    Our agency offers qualified specialists ready to help care for your child. We carefully select nannies, check their experience and recommendations so that you can be confident in the safety and comfort of your baby.
+                </div>
+                <a href="#" class="btn btn--contact">Contact us</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="pageAbout" class="section about">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">About Us</h2>
+                <div class="about__wrap d-flex">
+                    <div class="about__photo d-flex wow fadeInLeft">
+                        <div class="about__slider">
+                            <div><img class="about__slider-img" src="img/about-image-1.jpg" alt="about-photo-1"></div>
+                            <div><img class="about__slider-img" src="img/about-image-2.jpg" alt="about-photo-2"></div>
+                            <div><img class="about__slider-img" src="img/about-image-3.jpg" alt="about-photo-3"></div>
+                            <div><img class="about__slider-img" src="img/about-image-4.jpg" alt="about-photo-4"></div>
+                        </div>
+                        <div class="about__thumb">
+                            <div class="about__thumb-item"><img src="img/about-image-1.jpg" alt="thumb-1"></div>
+                            <div class="about__thumb-item"><img src="img/about-image-2.jpg" alt="thumb-2"></div>
+                            <div class="about__thumb-item"><img src="img/about-image-3.jpg" alt="thumb-3"></div>
+                            <div class="about__thumb-item"><img src="img/about-image-4.jpg" alt="thumb-4"></div>
+                        </div>
+                    </div>
+                    <div class="about__content wow fadeInUp">
+                        <p>Welcome to <b>Gomaid</b> - your trusted partner in finding highly qualified and caring nannies. We understand that choosing a nanny for your child is an important decision that requires trust and confidence. Our mission is to provide you with the best service in selecting professionals who will help create a safe and loving environment for your baby.</p>
+                        <p>At <b>Gomaid</b> we pride ourselves on helping families find the perfect nannies, creating a safe and warm environment for their children. We strive to make your choice easy and confident by providing the best services in the market.</p>
+                        <p>Contact us today to learn more about our services and start collaborating!</p>
+                        <p><a href="#" class="btn btn--contact">Contact us</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pageServices" class="section services">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">We Offer Best Services</h2>
+                <div class="services__wrap d-flex justify-content-between">
+                    <div class="services__item wow fadeInUp">
+                        <div class="services__icon">
+                            <img src="img/service-icon-1.svg" alt="">
+                        </div>
+                        <h3 class="services__title">Сhildcare services</h3>
+                        <div class="services__text">
+                            Child care services include a wide range of options that can be tailored to suit a family's different needs.
+                        </div>
+                    </div>
+                    <div class="services__item services__item--active wow fadeInUp">
+                        <div class="services__icon">
+                            <img src="img/service-icon-2.svg" alt="">
+                        </div>
+                        <h3 class="services__title">Home staff services</h3>
+                        <div class="services__text">
+                            Housekeeping services cover a wide range of tasks related to maintaining order, maintaining the home, and ensuring comfort in the home.
+                        </div>
+                    </div>
+                    <div class="services__item wow fadeInUp">
+                        <div class="services__icon">
+                            <img src="img/service-icon-3.svg" alt="">
+                        </div>
+                        <h3 class="services__title">Training services</h3>
+                        <div class="services__text">
+                            Training services cover various forms of educational assistance and mentoring aimed at developing knowledge and skills in a variety of areas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pageReviews" class="section reviews">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">Reviews</h2>
+                <div class="reviews__wrap d-flex justify-content-between">
+                    <div class="reviews__item wow fadeInUp">
+                        <div class="reviews__rating">
+                            <img src="img/star-4.png" alt="">
+                        </div>
+                        <div class="reviews__text">
+                            It is with great pleasure that we would like to leave this review of Mary, who worked with our family as a nanny for our child.
+                        </div>
+                        <div class="reviews__name">Jenny Wilson</div>
+                    </div>
+                    <div class="reviews__item wow fadeInUp">
+                        <div class="reviews__rating">
+                            <img src="img/star-5.png" alt="">
+                        </div>
+                        <div class="reviews__text">
+                            Nancy demonstrated a high level of professionalism from day one. She not only provided reliable care for our child, but also took the initiative in organizing educational games and activities
+                        </div>
+                        <div class="reviews__name">Michael Johnson</div>
+                    </div>
+                    <div class="reviews__item wow fadeInUp">
+                        <div class="reviews__rating">
+                            <img src="img/star-5.png" alt="">
+                        </div>
+                        <div class="reviews__text">
+                            Nancy was always attentive and caring. We saw how our child joyfully greets her every morning and enjoys spending time under her supervision. Her kindness and sensitivity made our time away from the child more peaceful.
+                        </div>
+                        <div class="reviews__name">Lily Lily</div>
+                    </div>
+                </div>
+                <div class="reviews__btn">
+                    <a href="#" class="btn btn--more">Show more</a>
+                </div>
+            </div>
+        </section>
+        <section id="pageContacts" class="section contacts">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">Contacts</h2>
+                <div class="contacts__wrap d-flex justify-content-between">
+                    <div class="contacts__text wow fadeInUp">
+                        We are here to help you find the best nanny!<br> Contact us!
+                    </div>
+                    <div class="contacts__form wow fadeInUp">
+                        <form action="#">
+                            <div class="d-flex justify-content-between">
+                                <div class="form__input form__input--half">
+                                    <label class="form__label" for="firstName">First name</label>
+                                    <input class="form__control" type="text">
+                                </div>
+                                <div class="form__input form__input--half">
+                                    <label class="form__label" for="lastName">Last name</label>
+                                    <input class="form__control" type="text">
+                                </div>
+                            </div>
+                            <div class="form__input">
+                                <label class="form__label" for="lastName">Email</label>
+                                <input class="form__control" type="email" name="" id="">
+                            </div>
+                            <div class="form__input">
+                                <label class="form__label" for="lastName">Phone number</label>
+                                <input class="form__control" type="tel" placeholder="+38 (___) ___-__-__" name="" id="phone">
+                            </div>
+                            <div class="form__input">
+                                <label class="form__label" for="lastName">Message</label>
+                                <textarea class="form__control form__control--message" name="" id=""></textarea>
+                            </div>
+                            <div class="form__input">
+                                <input id="agreeInput" type="checkbox">
+                                <label class="form__label form__label--row" for="agreeInput">You agree to our friendly  <a class="privacy-link" href="#">privacy policy</a></label>
+                            </div>
+                            <div class="form__input">
+                                <input class="btn btn--submit" type="submit" value="Send message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="logo">
+                <img src="img/logo-footer.svg" alt="">
+            </a>
+            <ul class="footer__nav d-flex">
+                <li class="footer__nav-item">
+                    <a href="#pageHome" class="footer__nav-link footer__nav-link--active">Home</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#pageAbout" class="footer__nav-link">About Us</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#pageReviews" class="footer__nav-link">Reviews</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#pageContacts" class="footer__nav-link">Contacts</a>
+                </li>
+            </ul>
+            <a href="#" class="footer__btn btn btn--contact">Contact us</a>
+            <a href="#pageHome" class="to-top"></a>
+        </div>
+    </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.inputmask.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
