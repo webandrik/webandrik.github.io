@@ -654,8 +654,8 @@ a {
         position: absolute;
         right: 0;
         top: 10px;
-        width: 20px;
-        height: 20px;
+        width: 35px;
+        height: 35px;
     }
 
     body.lock {
@@ -678,6 +678,7 @@ a {
 
     .form-control {
         width: 95%;
+        font-size: 18px;
     }
 
     .footer-content>div {
@@ -686,6 +687,7 @@ a {
     }
 
     .footer-desq {
+        margin-top: 20px;
         order: 2;
     }
 
