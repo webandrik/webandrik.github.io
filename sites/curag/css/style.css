@@ -588,27 +588,6 @@ a {
         transition: transform .4s ease;
     }
 
-    .header-contacts {
-        flex-wrap: wrap;
-    }
-
-    .header-contacts span {
-        margin-left: 38px;
-        margin-bottom: 10px;
-    }
-
-}
-
-@media screen and (max-width: 600px) {
-    .header-content {
-        margin-top: 50px;
-    }
-
-    .header-title {
-        font-size: 26px;
-        margin-bottom: 50px;
-    }
-
     .header-top-wrap.active,
     .menu-list,
     .header-info {
@@ -660,6 +639,27 @@ a {
 
     body.lock {
         overflow: hidden;
+    }
+
+    .header-contacts {
+        flex-wrap: wrap;
+    }
+
+    .header-contacts span {
+        margin-left: 38px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .header-content {
+        margin-top: 50px;
+    }
+
+    .header-title {
+        font-size: 26px;
+        margin-bottom: 50px;
     }
 
     .tours-item {
