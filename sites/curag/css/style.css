@@ -534,7 +534,7 @@ a {
         width: 30px;
         height: 20px;
         margin-left: 20px;
-        z-index: 3;
+        z-index: 1010;
     }
 
     .header-burger span {
