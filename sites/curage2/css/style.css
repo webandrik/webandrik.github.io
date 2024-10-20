@@ -719,6 +719,10 @@ a {
         flex-shrink: 0;
     }
 
+    .advantages-text {
+        padding-right: 0;
+    }
+
     .form-control {
         width: 95%;
         font-size: 18px;
