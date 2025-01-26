@@ -12,7 +12,18 @@ $(document).ready(function(){
 	  nav: true,
 	  autoplay: true,
 	  loop: true,
-	  autoplayHoverPause: true
+	  autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 2
+			},
+			1000: {
+				items: 3
+			}
+		}
 	});
 
 	$("input[type=tel]").mask("+380(99)999-99-99");
