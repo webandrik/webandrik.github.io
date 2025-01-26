@@ -1004,6 +1004,10 @@ p, h1, h2, h3, h4, h5, h6 {
         top: 8px;
         transform: translateY(0);
     }
+
+    .order .form-control {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 860px) {
@@ -1049,6 +1053,19 @@ p, h1, h2, h3, h4, h5, h6 {
 
     .slider__title {
         font-size: 18px;
+    }
+
+    .order__title {
+        font-size: 24px;
+    }
+
+    .order__desq-title {
+        font-size: 20px;
+    }
+
+    .order .form-control {
+        max-width: none;
+        width: 100%;
     }
 
 }
