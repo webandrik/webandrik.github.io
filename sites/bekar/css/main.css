@@ -936,7 +936,7 @@ p, h1, h2, h3, h4, h5, h6 {
     .owl-carousel .owl-nav button.owl-prev,
     .owl-carousel .owl-nav button.owl-next
      {
-        transform: translateX(0);
+        transform: translate(0, -50%);
     }
 }
 
@@ -1011,6 +1011,16 @@ p, h1, h2, h3, h4, h5, h6 {
 
     .top-sellers__item {
         margin-bottom: 15px;
+    }
+
+    .about__video {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .work-video {
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
 
@@ -1115,6 +1125,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
     .header__desq {
         max-width: 300px;
+    }
+
+    .section-title {
+        font-size: 26px;
     }
 
 }
