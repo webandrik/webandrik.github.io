@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="page-loader">
+      <div class="page-loader__left"></div>
+      <div class="page-loader__right"></div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__inner">
@@ -385,19 +389,19 @@
           <div class="col-md-6 col-lg-4">
             <div class="work-video">
               <img src="image/about-1.jpg" alt="work-1">
-              <a href="#" class="btn play-btn"></a>
+              <a id="test" href="#" class="btn play-btn" data-src="https://www.youtube.com/embed/UiH7GyAZKU0"></a>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="work-video">
               <img src="image/about-2.jpg" alt="work-1">
-              <a href="#" class="btn play-btn"></a>
+              <a href="#" class="btn play-btn" data-src="https://www.youtube.com/embed/_pga9cvSErg"></a>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="work-video">
               <img src="image/about-3.jpg" alt="work-1">
-              <a href="#" class="btn play-btn"></a>
+              <a href="#" class="btn play-btn" data-src="https://www.youtube.com/embed/MyueBGPVF2k"></a>
             </div>
           </div>
         </div>
@@ -409,27 +413,27 @@
         <div class="owl-carousel testimonials__slider">
             <div class="testimonials__item">
               <img src="image/about-1.jpg" alt="work-1">
-              <a href="#" class="btn play-btn"></a>
+              <a href="#" class="btn play-btn" data-src="https://www.youtube.com/embed/1K_UtWDyNTE"></a>
             </div>
             <div class="testimonials__item">
               <img src="image/about-2.jpg" alt="work-2">
-              <a href="#" class="btn play-btn"></a>
+              <a href="#" class="btn play-btn" data-src="https://www.youtube.com/embed/ppawFI1u6Po"></a>
             </div>
             <div class="testimonials__item">
               <img src="image/about-3.jpg" alt="work-3">
-              <a href="#" class="btn play-btn"></a>
+              <a href="#" class="btn play-btn" data-src="https://www.youtube.com/embed/5jXLY2nIxSo"></a>
             </div>
             <div class="testimonials__item">
               <img src="image/about-1.jpg" alt="work-4">
-              <a href="#" class="btn play-btn"></a>
+              <a href="#" class="btn play-btn" data-src="https://www.youtube.com/embed/1K_UtWDyNTE"></a>
             </div>
             <div class="testimonials__item">
               <img src="image/about-2.jpg" alt="work-5">
-              <a href="#" class="btn play-btn"></a>
+              <a href="#" class="btn play-btn" data-src="https://www.youtube.com/embed/ppawFI1u6Po"></a>
             </div>
             <div class="testimonials__item">
               <img src="image/about-3.jpg" alt="work-6">
-              <a href="#" class="btn play-btn"></a>
+              <a href="#" class="btn play-btn" data-src="https://www.youtube.com/embed/5jXLY2nIxSo"></a>
             </div>
         </div>
       </div>
@@ -535,6 +539,19 @@
         </form>
       </div>
     </div>
+  </div>
+</div>
+
+<div id="videoModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center">
+              <iframe width="400" height="300" frameborder="0" allowfullscreen></iframe>
+          </div>
+      </div>
   </div>
 </div>
     <script src="js/jquery-3.7.1.min.js"></script>
