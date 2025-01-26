@@ -26,5 +26,28 @@ $(document).ready(function(){
 		}
 	});
 
+	//To Top
+
+	$('.to-top').click(function(){
+		$('html, body').animate({scrollTop:0}, '300');
+		return false;
+	});
+
+	$('.play-btn').click(function (e) {
+		e.preventDefault();
+        let src = $(this).attr('data-src')+'?autoplay=1';
+        $('#videoModal').modal('show');
+        $('#videoModal iframe').attr('src', src);
+	});
+	
+	$('#videoModal button').click(function () {
+        $('#videoModal iframe').removeAttr('src');
+    });
+
 	$("input[type=tel]").mask("+380(99)999-99-99");
+
+	// Loder 
+    $(function () {
+        $('body').addClass('page-loaded');
+    });
 });
