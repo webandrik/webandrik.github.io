@@ -87,4 +87,6 @@ ul li {
     border-radius: 10px;
     background-color: #191a1a;
     padding: 10px;
+    max-width: 340px;
+    margin: 0 auto;
 }
