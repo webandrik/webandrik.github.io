@@ -47,9 +47,7 @@ ul li {
 }
 
 .page-container {
-    max-width: 340px;
-    padding: 0 10px;
-    margin: 10px auto;
+  
 }
 
 .wrapper {
@@ -58,6 +56,8 @@ ul li {
     color: #fff;
     border-radius: 10px;
     margin-bottom: 10px;
+    max-width: 340px;
+    margin: 10px auto;
 }
 
 .title-h1 {
