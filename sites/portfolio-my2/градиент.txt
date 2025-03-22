@@ -1,0 +1,1 @@
+radial-gradient(circle at 120.71% 50%, #45255c 0, #260d4a 50%, #090039 100%)
