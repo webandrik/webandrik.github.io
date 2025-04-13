@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <style>
+        .testimonials {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonials-item {
+            width: 200px;
+            min-height: 100px;
+            background-color: blue;
+            outline:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="testimonials">
+        <div class="testimonials-item">
+            <h3>Item1</h3>
+        </div>
+        <div class="testimonials-item">
+            <h3>Item2</h3>
+        </div>
+        <div class="testimonials-item">
+            <h3>Item3</h3>
+        </div>
+        <div class="testimonials-item">
+            <h3>Item4</h3>
+        </div>
+        <div class="testimonials-item">
+            <h3>Item5</h3>
+        </div>
+        <div class="testimonials-item">
+            <h3>Item6</h3>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <script>
+         $('.testimonials').slick({
+          speed: 500,
+          arrows: false,
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        });
+    </script>
+</body>
+</html>

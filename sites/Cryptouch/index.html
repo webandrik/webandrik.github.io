@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptouch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav navbar navbar-expand-lg">
+                <a class="logo navbar-brand" href="#">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Про проект</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Приоритетные работы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Карта развития</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Партнерская программа</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Помощь</a>
+                        </li>
+                    </ul>
+                <div class="dropdown">
+                    <button class="btn language dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      RU
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">EN</a></li>
+                      <li><a class="dropdown-item" href="#">UA</a></li>
+                    </ul>
+                </div>
+                <button href="#" class="btn btn--action header__login">Login</button>
+             </div>
+            </nav>
+            <div class="header__info">
+                <div class="header__text">
+                    Мы разработали алгоритмы которые <span class="text-color">будут работать на Вас.</span>
+                </div>
+                <div class="header__register">
+                    <a class="btn btn--register" href="#">Зарегистрироваться прямо сейчас</a>
+                    <a class="btn btn--link" href="#"><span>Видео регистрации</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+     <section class="courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="courses__item">
+                        <div class="d-flex justify-content-between mb-2">
+                           <div class="courses__icon">
+                            <img src="images/bitcoin.svg" alt="bitcoin">
+                            </div>
+                            <div class="courses__indicator">
+                                <img src="images/indicator-up.svg" alt="indicator">
+                            </div> 
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                             <div class="courses__name">
+                                Bitcoin
+                             </div>
+                             <div class="courses__percent">
+                                2.11%
+                             </div> 
+                         </div>
+                         <div class="d-flex justify-content-between">
+                            <div class="courses__value">
+                                USD 50,000
+                             </div>
+                             <div class="courses__currency">
+                                BTC
+                             </div> 
+                         </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="courses__item">
+                        <div class="d-flex justify-content-between mb-2">
+                           <div class="courses__icon">
+                            <img src="images/ethereum.svg" alt="bitcoin">
+                            </div>
+                            <div class="courses__indicator">
+                                <img src="images/indicator-down.svg" alt="indicator">
+                            </div> 
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                             <div class="courses__name">
+                                Ethereum
+                             </div>
+                             <div class="courses__percent courses__percent--down">
+                                2.11%
+                             </div> 
+                         </div>
+                         <div class="d-flex justify-content-between">
+                            <div class="courses__value">
+                                USD 50,000
+                             </div>
+                             <div class="courses__currency">
+                                ETH
+                             </div> 
+                         </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="courses__item">
+                        <div class="d-flex justify-content-between mb-2">
+                           <div class="courses__icon">
+                            <img src="images/bitcoin.svg" alt="bitcoin">
+                            </div>
+                            <div class="courses__indicator">
+                                <img src="images/indicator-up.svg" alt="indicator">
+                            </div> 
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                             <div class="courses__name">
+                                Bitcoin
+                             </div>
+                             <div class="courses__percent">
+                                2.11%
+                             </div> 
+                         </div>
+                         <div class="d-flex justify-content-between">
+                            <div class="courses__value">
+                                USD 50,000
+                             </div>
+                             <div class="courses__currency">
+                                BTC
+                             </div> 
+                         </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="courses__item">
+                        <div class="d-flex justify-content-between mb-2">
+                           <div class="courses__icon">
+                            <img src="images/ethereum.svg" alt="ethereum">
+                            </div>
+                            <div class="courses__indicator">
+                                <img src="images/indicator-down.svg" alt="indicator">
+                            </div> 
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                             <div class="courses__name">
+                                Ethereum
+                             </div>
+                             <div class="courses__percent courses__percent--down">
+                                2.11%
+                             </div> 
+                         </div>
+                         <div class="d-flex justify-content-between">
+                            <div class="courses__value">
+                                USD 50,000
+                             </div>
+                             <div class="courses__currency">
+                                ETH
+                             </div> 
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="revolution">
+        <div class="container">
+            <div class="revolution__inner">
+               <h2 class="section-title">CrypTouch: Революция в разработке на базе <span class="text-color">TensorFlow 2.0</span></h2>
+               <div class="revolution__desq">
+                    <p class="mb-4">Станьте частью нашей партнерской программы совершенно бесплатно и начните зарабатывать уже сегодня.</p>
+                    <ul class="list-style">
+                        <li>Получайте ваш заработок еженедельно.</li>
+                    </ul>
+               </div>
+               <div class="revolution__register">
+                    <a class="revolution__btn btn btn--register" href="#">Зарегистрироваться прямо сейчас</a>
+                    <a class="btn btn--link" href="#">Видео регистрации</a>
+               </div>  
+            </div>
+        </div>
+        <div class="revolution__brand">
+            <img src="images/logo-line.svg" alt="brand">
+            <img src="images/logo-line.svg" alt="brand">
+            <img src="images/logo-line.svg" alt="brand">
+            <img src="images/logo-line.svg" alt="brand">
+            <img src="images/logo-line.svg" alt="brand">
+            <img src="images/logo-line.svg" alt="brand">
+            <img src="images/logo-line.svg" alt="brand">
+        </div>
+        <div class="revolution__why">
+                <div class="revolution__why-item">
+                    <img src="images/logo-min.svg" alt="logo">
+                    <p class="mx-2">Почему мы предлагаем делиться прибылью с вами?</p>
+                </div>
+                <div class="revolution__why-item">
+                    <img src="images/logo-min.svg" alt="logo">
+                    <p class="mx-2">Почему мы предлагаем делиться прибылью с вами?</p>
+                </div>
+                <div class="revolution__why-item">
+                    <img src="images/logo-min.svg" alt="logo">
+                    <p class="mx-2">Почему мы предлагаем делиться прибылью с вами?</p>
+                </div>
+                <div class="revolution__why-item">
+                    <img src="images/logo-min.svg" alt="logo">
+                    <p class="mx-2">Почему мы предлагаем делиться прибылью с вами?</p>
+                </div>
+                <div class="revolution__why-item">
+                    <img src="images/logo-min.svg" alt="logo">
+                    <p class="mx-2">Почему мы предлагаем делиться прибылью с вами?</p>
+                </div>
+                <div class="revolution__why-item">
+                    <img src="images/logo-min.svg" alt="logo">
+                    <p class="mx-2">Почему мы предлагаем делиться прибылью с вами?</p>
+                </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__list d-flex justify-content-between">
+               <div class="advantages__item">
+                    <h3 class="advantages__name">Рост</h3>
+                    <div class="advantages__desq">Совместное развитие.</div>
+               </div>
+               <div class="advantages__item">
+                    <h3 class="advantages__name">Возможности</h3>
+                    <div class="advantages__desq">Открытие перспектив.</div>
+                </div>
+                <div class="advantages__item">
+                    <h3 class="advantages__name">Заработок</h3>
+                    <div class="advantages__desq">Выгодное пратнерство.</div>
+                </div> 
+            </div>
+            <div class="advantages__footer">
+               <div class="advantages__text">
+                Потому что сфера криптовалютных бирж и биржевых пар дают огромное количество возможностей, каждый день создаются стартапы и новые крипто проекты которые предоставляют шанс заработать привлекательные проценты.
+               </div>
+               <a href="#" class="btn btn--action">Начать прямо сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="works">
+        <div class="container">
+            <h2 class="section-title">Приоритеты работы с CrypTouch</h2>
+            <div class="row works__list">
+                <div class="col-lg-3">
+                    <div class="works__item">
+                        <img class="works__icon" src="images/work-icon-1.svg" alt="work-icon"/>
+                        <div class="works__desq">
+                            Наши алгоритмы торгуют ежедневно, без выходных.
+                        </div>
+                        <a href="#" class="btn btn--link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="works__item">
+                        <img class="works__icon" src="images/work-icon-2.svg" alt="work-icon"/>
+                        <div class="works__desq">
+                            Наши алгоритмы торгуют ежедневно, без выходных.
+                        </div>
+                        <a href="#" class="btn btn--link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="works__item">
+                        <img class="works__icon" src="images/work-icon-3.svg" alt="work-icon"/>
+                        <div class="works__desq">
+                            Наши алгоритмы торгуют ежедневно, без выходных.
+                        </div>
+                        <a href="#" class="btn btn--link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="works__item">
+                        <img class="works__icon" src="images/work-icon-4.svg" alt="work-icon"/>
+                        <div class="works__desq">
+                            Наши алгоритмы торгуют ежедневно, без выходных.
+                        </div>
+                        <a href="#" class="btn btn--link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="works__item">
+                        <img class="works__icon" src="images/work-icon-5.svg" alt="work-icon"/>
+                        <div class="works__desq">
+                            Наши алгоритмы торгуют ежедневно, без выходных.
+                        </div>
+                        <a href="#" class="btn btn--link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="works__item">
+                        <img class="works__icon" src="images/work-icon-6.svg" alt="work-icon"/>
+                        <div class="works__desq">
+                            Наши алгоритмы торгуют ежедневно, без выходных.
+                        </div>
+                        <a href="#" class="btn btn--link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="works__item">
+                        <img class="works__icon" src="images/work-icon-7.svg" alt="work-icon"/>
+                        <div class="works__desq">
+                            Наши алгоритмы торгуют ежедневно, без выходных.
+                        </div>
+                        <a href="#" class="btn btn--link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="works__item">
+                        <img class="works__icon" src="images/work-icon-8.svg" alt="work-icon"/>
+                        <div class="works__desq">
+                            Наши алгоритмы торгуют ежедневно, без выходных.
+                        </div>
+                        <a href="#" class="btn btn--link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="possibilities">
+        <div class="container">
+            <h2 class="section-title">Возможности с CrypTouch AI</h2>
+            <div class="possibilities__list row">
+                <div class="col-lg-4">
+                    <div class="possibilities__item">
+                        <h3 class="possibilities__title">Торговый Алгоритм</h3>
+                        <ul class="list-style list-style-margin">
+                            <li>доступные депозиты от 10$ до 100000$;</li>
+                            <li>доходность до 7%;</li>
+                            <li>вывод дивидендов каждую неделю;</li>
+                            <li>доступ к обучению;</li>
+                            <li>доступ к участию в партнерской программе;</li>
+                            <li>вывод тела каждые шесть месяцев.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="possibilities__item">
+                        <h3 class="possibilities__title">Комбо Алгоритм</h3>
+                        <ul class="list-style list-style-margin">
+                            <li>доступные депозиты от 10$ до 100000$;</li>
+                            <li>доходность до 7%;</li>
+                            <li>вывод дивидендов каждую неделю;</li>
+                            <li>доступ к обучению;</li>
+                            <li>доступ к участию в партнерской программе;</li>
+                            <li>вывод тела каждые шесть месяцев.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="possibilities__item">
+                        <h3 class="possibilities__title">Торговый Алгоритм</h3>
+                        <ul class="list-style list-style-margin">
+                            <li>доступные депозиты от 10$ до 100000$;</li>
+                            <li>доходность до 7%;</li>
+                            <li>вывод дивидендов каждую неделю;</li>
+                            <li>доступ к обучению;</li>
+                            <li>доступ к участию в партнерской программе;</li>
+                            <li>вывод тела каждые шесть месяцев.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex algoritms">
+                    <div class="algoritms__item">
+                        При выборе торговых алгоритмов они работают на одной бирже
+                    </div>
+                    <div class="algoritms__item">
+                        При выборе арбитражных алгоритмов, они работают на нескольких биржах
+                    </div>
+                    <div class="algoritms__item">
+                        Комбо алгоритмы запускаются на торговом или арбитражном алгоритме в зависимости от рыночной ситуации.
+                    </div>
+                    <div class="algoritms__item">
+                        Вывода тела депозита по запросу или заполнению заявки
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="affiliates">
+        <div class="container">
+            <div class="affiliates__content">
+                <h2 class="section-title">Партнерская программа</h2>
+                <p class="my-3">Станьте частью нашей партнерской программы совершенно бесплатно и начните зарабатывать уже сегодня.</p>
+                <ul class="list-style mb-4">
+                    <li>Начните зарабатывать от 5%, активировав аллгоритмы от 50 usdt</li>
+                    <li>Зарабатывайте от 100$ в месяц, привлекая новых клиентов. </li>
+                    <li>Получайте ваш заработок еженедельно. </li>
+                </ul>
+                <div class="text-center">
+                    <a href="#" class="btn btn--action">Зарегистрироваться прямо сейчас</a>
+                    <a href="#" class="btn btn--link">
+                        Видео регистрации
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="container">
+            <div class="video__content">
+                <a href="#" class="btn btn--play"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="companies">
+        <div class="container">
+            <h2 class="section-title">О нас говорят</h2>
+            <div class="companies__list">
+                <div class="col-lg-3">
+                    <div class="companies__item">
+                        <div class="companies__box">
+                            <img src="images/binance-logo.svg" alt="binance company">
+                        </div>
+                        <h3 class="companies__name">Binance</h3>
+                        <div class="companies__desq">
+                            Binance раскрывает, как нейросети делают инвестиции доступнее и эффективнее.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="companies__item">
+                        <div class="companies__box companies__box--coin">
+                            <img src="images/coin-logo.svg" alt="binance company">
+                        </div>
+                        <h3 class="companies__name">Binance</h3>
+                        <div class="companies__desq">
+                            Binance раскрывает, как нейросети делают инвестиции доступнее и эффективнее.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="companies__item">
+                        <div class="companies__box companies__box--world">
+                            <img src="images/world-logo.svg" alt="binance company">
+                        </div>
+                        <h3 class="companies__name">Binance</h3>
+                        <div class="companies__desq">
+                            Binance раскрывает, как нейросети делают инвестиции доступнее и эффективнее.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="companies__item">
+                        <div class="companies__box companies__box--news">
+                            <img src="images/news-logo.svg" alt="binance company">
+                        </div>
+                        <h3 class="companies__name">Binance</h3>
+                        <div class="companies__desq">
+                            Binance раскрывает, как нейросети делают инвестиции доступнее и эффективнее.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="companies__item">
+                        <div class="companies__box companies__box--news">
+                            <img src="images/news-logo.svg" alt="binance company">
+                        </div>
+                        <h3 class="companies__name">Binance</h3>
+                        <div class="companies__desq">
+                            Binance раскрывает, как нейросети делают инвестиции доступнее и эффективнее.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="companies__item">
+                        <div class="companies__box companies__box--news">
+                            <img src="images/news-logo.svg" alt="binance company">
+                        </div>
+                        <h3 class="companies__name">Binance</h3>
+                        <div class="companies__desq">
+                            Binance раскрывает, как нейросети делают инвестиции доступнее и эффективнее.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="companies__item">
+                        <div class="companies__box companies__box--news">
+                            <img src="images/news-logo.svg" alt="binance company">
+                        </div>
+                        <h3 class="companies__name">Binance</h3>
+                        <div class="companies__desq">
+                            Binance раскрывает, как нейросети делают инвестиции доступнее и эффективнее.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Люди говорят</h2>
+        </div>
+            <div class="testimonials__list">
+                <div class="testimonials__item">
+                    <div class="testimonials__text">
+                        111Great for advanced crypto trading bots. 30+ exchanges supported. Can use templates, signals, or develop custom bots. Batch backtesting, paper trading, charting, dashboards. No black box code. Trusted team.
+                    </div>
+                    <div class="testimonials__avtor">
+                        <div class="d-flex">
+                            <div class="testimonials__logo">
+                                <img src="images/logo.svg" alt="logo user">
+                            </div>
+                            <div class="testimonials__info">
+                                <div class="testimonials__name">Customers</div>
+                                <div class="d-flex">
+                                    <div class="testimonials__rating">
+                                        <img src="images/rating.svg" alt="rating">
+                                    </div>
+                                    <div class="testimonials__company">SourceForge</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__item">
+                    <div class="testimonials__text">
+                        222Great for advanced crypto trading bots. 30+ exchanges supported. Can use templates, signals, or develop custom bots. Batch backtesting, paper trading, charting, dashboards. No black box code. Trusted team.
+                    </div>
+                    <div class="testimonials__avtor">
+                        <div class="d-flex">
+                            <div class="testimonials__logo">
+                                <img src="images/logo.svg" alt="logo user">
+                            </div>
+                            <div class="testimonials__info">
+                                <div class="testimonials__name">Customers</div>
+                                <div class="d-flex">
+                                    <div class="testimonials__rating">
+                                        <img src="images/rating.svg" alt="rating">
+                                    </div>
+                                    <div class="testimonials__company">SourceForge</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__item">
+                    <div class="testimonials__text">
+                        333Great for advanced crypto trading bots. 30+ exchanges supported. Can use templates, signals, or develop custom bots. Batch backtesting, paper trading, charting, dashboards. No black box code. Trusted team.
+                    </div>
+                    <div class="testimonials__avtor">
+                        <div class="d-flex">
+                            <div class="testimonials__logo">
+                                <img src="images/logo.svg" alt="logo user">
+                            </div>
+                            <div class="testimonials__info">
+                                <div class="testimonials__name">Customers</div>
+                                <div class="d-flex">
+                                    <div class="testimonials__rating">
+                                        <img src="images/rating.svg" alt="rating">
+                                    </div>
+                                    <div class="testimonials__company">SourceForge</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__item">
+                    <div class="testimonials__text">
+                        444Great for advanced crypto trading bots. 30+ exchanges supported. Can use templates, signals, or develop custom bots. Batch backtesting, paper trading, charting, dashboards. No black box code. Trusted team.
+                    </div>
+                    <div class="testimonials__avtor">
+                        <div class="d-flex">
+                            <div class="testimonials__logo">
+                                <img src="images/logo.svg" alt="logo user">
+                            </div>
+                            <div class="testimonials__info">
+                                <div class="testimonials__name">Customers</div>
+                                <div class="d-flex">
+                                    <div class="testimonials__rating">
+                                        <img src="images/rating.svg" alt="rating">
+                                    </div>
+                                    <div class="testimonials__company">SourceForge</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__item">
+                    <div class="testimonials__text">
+                        555Great for advanced crypto trading bots. 30+ exchanges supported. Can use templates, signals, or develop custom bots. Batch backtesting, paper trading, charting, dashboards. No black box code. Trusted team.
+                    </div>
+                    <div class="testimonials__avtor">
+                        <div class="d-flex">
+                            <div class="testimonials__logo">
+                                <img src="images/logo.svg" alt="logo user">
+                            </div>
+                            <div class="testimonials__info">
+                                <div class="testimonials__name">Customers</div>
+                                <div class="d-flex">
+                                    <div class="testimonials__rating">
+                                        <img src="images/rating.svg" alt="rating">
+                                    </div>
+                                    <div class="testimonials__company">SourceForge</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__item">
+                    <div class="testimonials__text">
+                        666Great for advanced crypto trading bots. 30+ exchanges supported. Can use templates, signals, or develop custom bots. Batch backtesting, paper trading, charting, dashboards. No black box code. Trusted team.
+                    </div>
+                    <div class="testimonials__avtor">
+                        <div class="d-flex">
+                            <div class="testimonials__logo">
+                                <img src="images/logo.svg" alt="logo user">
+                            </div>
+                            <div class="testimonials__info">
+                                <div class="testimonials__name">Customers</div>
+                                <div class="d-flex">
+                                    <div class="testimonials__rating">
+                                        <img src="images/rating.svg" alt="rating">
+                                    </div>
+                                    <div class="testimonials__company">SourceForge</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="history">
+        <div class="container">
+            <h2 class="section-title">Карта развития CrypTouch</h2>
+            <div class="tabs">
+               <div class="tab-content" id="myTabContent">
+                    <div role="tabpanel" class="tab-pane active" id="tab1">
+                        <div class="tabs__title">q4 2024</div>
+                        <ul class="list-style">
+                            <li>Демонстративный плагин торговли AI CrypTouch
+                                - В пари BTC\USDT</li>
+                            <li>Новый торговый алгоритм для рынка Forex
+                                - Разработка и запуск алгоритма, ориентированного на торговлю валютами на рынке Forex.
+                            </li>
+                            <li>Обновление аффилейт программы
+                                - Введение новых карьерных уровней для участников аффилейт программы.
+                                - Добавление трёх новых видов бонусов для партнёров.
+                            </li>
+                            <li>Обновление платформы
+                                - Оптимизация скорости и производительности для 
+                                улучшения пользовательского опыта.
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab2">
+                        <div class="tabs__title">Q1 2025</div>
+                        <ul class="list-style">
+                            <li>Демонстративный плагин торговли AI CrypTouch
+                                - В пари BTC\USDT</li>
+                            <li>Новый торговый алгоритм для рынка Forex
+                                - Разработка и запуск алгоритма, ориентированного на торговлю валютами на рынке Forex.
+                            </li>
+                            <li>Обновление аффилейт программы
+                                - Введение новых карьерных уровней для участников аффилейт программы.
+                                - Добавление трёх новых видов бонусов для партнёров.
+                            </li>
+                            <li>Обновление платформы
+                                - Оптимизация скорости и производительности для 
+                                улучшения пользовательского опыта.
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab3">
+                        <div class="tabs__title">Q2 2025</div>
+                        <ul class="list-style">
+                            <li>Демонстративный плагин торговли AI CrypTouch
+                                - В пари BTC\USDT</li>
+                            <li>Новый торговый алгоритм для рынка Forex
+                                - Разработка и запуск алгоритма, ориентированного на торговлю валютами на рынке Forex.
+                            </li>
+                            <li>Обновление аффилейт программы
+                                - Введение новых карьерных уровней для участников аффилейт программы.
+                                - Добавление трёх новых видов бонусов для партнёров.
+                            </li>
+                            <li>Обновление платформы
+                                - Оптимизация скорости и производительности для 
+                                улучшения пользовательского опыта.
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab4">
+                        <div class="tabs__title">Q3 2025</div>
+                        <ul class="list-style">
+                            <li>Демонстративный плагин торговли AI CrypTouch
+                                - В пари BTC\USDT</li>
+                            <li>Новый торговый алгоритм для рынка Forex
+                                - Разработка и запуск алгоритма, ориентированного на торговлю валютами на рынке Forex.
+                            </li>
+                            <li>Обновление аффилейт программы
+                                - Введение новых карьерных уровней для участников аффилейт программы.
+                                - Добавление трёх новых видов бонусов для партнёров.
+                            </li>
+                            <li>Обновление платформы
+                                - Оптимизация скорости и производительности для 
+                                улучшения пользовательского опыта.
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab5">
+                        <div class="tabs__title">Q4 2025</div>
+                        <ul class="list-style">
+                            <li>Демонстративный плагин торговли AI CrypTouch
+                                - В пари BTC\USDT</li>
+                            <li>Новый торговый алгоритм для рынка Forex
+                                - Разработка и запуск алгоритма, ориентированного на торговлю валютами на рынке Forex.
+                            </li>
+                            <li>Обновление аффилейт программы
+                                - Введение новых карьерных уровней для участников аффилейт программы.
+                                - Добавление трёх новых видов бонусов для партнёров.
+                            </li>
+                            <li>Обновление платформы
+                                - Оптимизация скорости и производительности для 
+                                улучшения пользовательского опыта.
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab6">
+                        <div class="tabs__title">Q1-Q4 2026</div>
+                        <ul class="list-style">
+                            <li>Демонстративный плагин торговли AI CrypTouch
+                                - В пари BTC\USDT</li>
+                            <li>Новый торговый алгоритм для рынка Forex
+                                - Разработка и запуск алгоритма, ориентированного на торговлю валютами на рынке Forex.
+                            </li>
+                            <li>Обновление аффилейт программы
+                                - Введение новых карьерных уровней для участников аффилейт программы.
+                                - Добавление трёх новых видов бонусов для партнёров.
+                            </li>
+                            <li>Обновление платформы
+                                - Оптимизация скорости и производительности для 
+                                улучшения пользовательского опыта.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="tabs__menu nav nav-tabs" id="myTab" role="tablist">
+                    <li role="presentation" class="tabs__menu-item">
+                        <a class="tabs__menu-link active" href="#tab1" role="tab" data-bs-toggle="tab" data-bs-target="#tab1">
+                            <span>Fourth Quarter 2024</span>
+                            <span>Q4 2024/</span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="tabs__menu-item">
+                        <a class="tabs__menu-link" href="#tab2" role="tab" data-bs-toggle="tab" data-bs-target="#tab2">
+                            <span>First Quarter 2025</span>
+                            <span>Q1 2025/</span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="tabs__menu-item">
+                        <a class="tabs__menu-link" href="#tab3" role="tab" data-bs-toggle="tab" data-bs-target="#tab3">
+                            <span>Second Quarter 2025</span>
+                            <span>Q2 2025/</span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="tabs__menu-item">
+                        <a class="tabs__menu-link" href="#tab3" role="tab" data-bs-toggle="tab" data-bs-target="#tab4">
+                            <span>Third Quarter 2025</span>
+                            <span>Q3 2025/</span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="tabs__menu-item">
+                        <a class="tabs__menu-link" href="#tab3" role="tab" data-bs-toggle="tab" data-bs-target="#tab5">
+                            <span>Fourth Quarter 2025</span>
+                            <span>Q4 2025/</span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="tabs__menu-item">
+                        <a class="tabs__menu-link" href="#tab3" role="tab" data-bs-toggle="tab" data-bs-target="#tab6">
+                            <span>First through Fourth Quarter 2026</span>
+                            <span>Q1-Q4 2026/</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+    
+   <footer class="footer">
+        <div class="container">
+           <div class="row">
+            <div class="col-lg-3">
+                <a href="#"><img src="images/footer-logo.svg" alt=""></a>
+                <p class="footer__address">
+                    20 Wenlock Road London, England, N1 7GU
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#">FAQ</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#">Новости</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#">Презентация</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#">Документация</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#">Регистрация</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="footer__social">
+                    <li class="footer__social-item"><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
+                    <li class="footer__social-item"><a href="#"><img src="images/youtube.svg" alt="youtube"></a></li>
+                    <li class="footer__social-item"><a href="#"><img src="images/telegram.svg" alt="telegram"></a></li>
+                    <li class="footer__social-item"><a href="#"><img src="images/facebook.svg" alt="facebook"></a></li>
+                    <li class="footer__social-item"><a href="#"><img src="images/insta.svg" alt="instagram"></a></li>
+                </ul>
+                <div class="footer__contacts">
+                    <p class="footer__contacts-item"><a href="tel:+447418355962">+447418355962</a></p>
+                    <p class="footer__contacts-item"><a href="mailto:support@cryptouch.ai">support@cryptouch.ai</a></p>   
+                </div>
+                <div class="footer__copyright">
+                    Copyright © 2024. All rights reserved.
+                </div>
+            </div>
+        </div> 
+      </div>
+        
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <script>
+        $('.testimonials__list').slick({
+          speed: 500,
+          arrows: false,
+          autoplay: true,
+        //   centerMode: false,
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1099,
+              settings: { slidesToShow: 2 },
+            },
+            {
+              breakpoint: 600,
+              settings: { slidesToShow: 1 },
+            }
+           ],
+        });
+
+        $('.companies__list').slick({
+          speed: 500,
+          arrows: true,
+          autoplay: true,
+        //   centerMode: false,
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1099,
+              settings: { slidesToShow: 2 },
+            },
+            {
+              breakpoint: 600,
+              settings: { slidesToShow: 1 },
+            }
+        ],
+        });
+
+        $('.revolution__why').slick({
+          speed: 8000,
+          autoplay: true,
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          arrows: false,
+          autoplaySpeed: true,
+          pauseOnHover:true
+        });
+    </script>
+</body>
+</html>
