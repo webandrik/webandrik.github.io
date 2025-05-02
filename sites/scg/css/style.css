@@ -1289,6 +1289,26 @@ body {
         align-items: center;
     }
 
+    .remont__row {
+        flex-direction: column;
+    }
+
+    .remont__photo + .remont__text {
+        padding-left: 0;
+    }
+
+    .remont__title {
+        font-size: 26px;
+    }
+
+    .remont__photo {
+        order: -1;
+    }
+
+    .remont__photo img {
+        max-height: 400px;
+    }
+
 }
 
 @media (max-width: 860px) {
@@ -1327,6 +1347,27 @@ body {
 
     .section-title {
         font-size: 36px;
+    }
+
+    .price__inner {
+        flex-direction: column;
+    }
+
+    .price__text {
+        order: -1;
+    }
+
+    .why__text {
+        display: block;
+    }
+
+    .order__inner {
+        padding-left: 0;
+        background-image: none;
+    }
+
+    .area-service__list {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
