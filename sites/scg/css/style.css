@@ -1314,7 +1314,11 @@ body {
 
     .footer__desq {
         display: block;
-        margin-top: 20px;
+    }
+
+    .footer__logo {
+        display: block;
+        margin-bottom: 24px;
     }
 
 }
@@ -1470,8 +1474,13 @@ body {
         display: block;
     }
 
-    .footer__info {
+    .footer__title {
+        font-size: 24px;
+    }
+
+    .footer__info,
+    .footer__contacts {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 }
