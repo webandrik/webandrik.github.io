@@ -508,7 +508,7 @@
             </div>
         </div>
     </section>
-    <!--<section class="articles section">
+    <section class="articles section">
         <div class="articles__heading container">
             <h2 class="section-title">Корисні статті</h2>
         </div>
@@ -653,7 +653,7 @@
             </ol>
         </div>
     </section>
-    <footer class="footer">
+    <!--<footer class="footer">
         <div class="container">
             <div class="footer__desq">
                 <a href="#" class="footer__logo">
@@ -845,9 +845,35 @@
             slidesToScroll: 1,
             arrows: true,
             pauseOnHover: true,
+            centerMode: true,
             appendArrows: $('.articles__heading'),
             prevArrow: '<button id="prev" type="button" class="btn btn--slide-prev"></button>',
-            nextArrow: '<button id="next" type="button" class="btn btn--slide-next"></button>'
+            nextArrow: '<button id="next" type="button" class="btn btn--slide-next"></button>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        centerMode: false
+                    }
+                },
+
+                {
+                    breakpoint: 860,
+                    settings: {
+                        slidesToShow: 2,
+                        centerMode: false
+                    }
+                },
+
+                {
+                    breakpoint: 560,
+                    settings: {
+                        slidesToShow: 1,
+                        centerMode: false
+                    }
+                }
+            ]
         });
     </script>
 </body>
