@@ -1439,9 +1439,13 @@ body {
     }
     .header__main {
         background-size: auto;
+        background-position: -370px 50%;
     }
     .header__title {
         font-size: 30px;
+    }
+    .header__content {
+        padding-bottom: 500px;
     }
     .label,
     .header__phone {
