@@ -1272,6 +1272,9 @@ body {
         /* font-size: 40px; */
         flex-basis: auto;
     }
+    .order__inner {
+        padding-left: 20px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -1359,11 +1362,22 @@ body {
 
     .why__text {
         display: block;
+        margin-bottom: 60px;
     }
 
     .order__inner {
         padding-left: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
         background-image: none;
+    }
+
+    .order__title {
+        font-size: 30px;
+    }
+
+    .area-service {
+        padding-top: 60px;
     }
 
     .area-service__list {
@@ -1427,5 +1441,13 @@ body {
     
     .section-title {
         font-size: 30px;
+    }
+
+    .articles__heading {
+        padding-right: 100px;
+    }
+
+    .slick-current a{
+        margin: auto;
     }
 }
