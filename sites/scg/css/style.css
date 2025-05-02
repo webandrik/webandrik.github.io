@@ -1337,6 +1337,13 @@ body {
     .header__numbers-item+.header__numbers-item {
         border-left: none;
     }
+    .problems__list {
+        display: block;
+    }
+
+    .faq__title {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 600px) {
