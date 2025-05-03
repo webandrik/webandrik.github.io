@@ -1452,6 +1452,25 @@ body {
     .header__numbers-item {
         flex-basis: 40%;
         font-size: 32px;
+        /* border-bottom: 1px solid rgba(255,255,255,0.1); */
+        position: relative;
+        /* padding: 20px; */
+        /* padding: 10px; */
+        padding-right: 10px;
+    }
+
+    .header__numbers-item:before {
+        content: '';
+        height: 1px;
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        right: 0px;
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    .header__numbers-item:nth-child(n+3):before {
+        display: none;
     }
 
     .header__numbers-item span {
@@ -1526,9 +1545,9 @@ body {
     .header__numbers {
         padding: 10px;
     }
-    .header__numbers-item+.header__numbers-item {
+    /* .header__numbers-item+.header__numbers-item {
         border-left: none;
-    }
+    } */
     .problems__list {
         display: block;
     }
