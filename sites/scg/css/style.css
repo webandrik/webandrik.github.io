@@ -393,6 +393,20 @@ body {
     bottom: 12px;
 }
 
+.btn-hamburger--active span {
+    transform: scale(0);
+}
+
+.btn-hamburger--active:before {
+    transform: rotate(45deg);
+    top: 21px;
+}
+
+.btn-hamburger--active:after {
+    transform: rotate(-45deg);
+    bottom: 21px;
+}
+
 .header__main {
     display: flex;
     justify-content: space-between;
