@@ -358,15 +358,14 @@ body {
 }
 
 .btn-hamburger {
+    display: none;
     width: 44px;
     height: 44px;
     background-color: transparent;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     position: relative;
-    /* background-color: red; */
     border: none;
-    /* display: none; */
     position: absolute;
     right: 0;
     top: 50%;
@@ -1337,19 +1336,24 @@ body {
         display: none;
     }
 
+    .btn-hamburger {
+        display: flex;
+    }
+
     .header__nav {
         transform: translateY(-200%);
-        transition: all .3s ease-in;
         position: absolute;
         top: 0;
         left: 0;
         opacity: 0;
+        transition: all .4s ease;
     }
 
     .header__nav--active,
     .header__nav-list {
         display: block;
         position: static;
+        max-height: none;
         transform: translateY(0);
         opacity: 1;
     }
