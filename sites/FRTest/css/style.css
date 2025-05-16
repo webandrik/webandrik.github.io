@@ -383,6 +383,11 @@ a {
         padding-top: 0;
     }
 
+    .services__item {
+        padding: 15px 25px;
+        margin-bottom: 30px;
+    }
+
 }
 
 @media (max-width: 667px) {
@@ -425,17 +430,8 @@ a {
         height: 50px;
     }
 
-    .services__name {
-        font-size: 12px;
-    }
-
     .services {
         gap: 10px;
-    }
-
-    .services__item {
-        padding: 15px 25px;
-        margin-bottom: 30px;
     }
 
     .works__title {
