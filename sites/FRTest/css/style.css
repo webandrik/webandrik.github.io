@@ -262,6 +262,7 @@ a {
     max-height: 96px;
     padding: 20px 0;
     border-bottom: 2px solid #2C2C2C;
+    color: #2C2C2C;
     overflow: hidden;
     cursor: pointer;
     transition: max-height .4s ease;
@@ -272,7 +273,7 @@ a {
 }
 
 .works__item--active {
-    opacity: 1;
+    color: #fff;
 }
 
 .works__desc {
@@ -288,13 +289,14 @@ a {
 .works__desc-title {
     font-size: 48px;
     font-weight: 500;
-    color: #2C2C2C;
+    /* color: #2C2C2C; */
+    color: inherit;
     max-width: 436px;
     margin-bottom: 84px;
     transition: color .4s ease;
 }
 
-.works__title:hover {
+.works__desc-title:hover {
     color: #fff;
 }
 
@@ -314,6 +316,7 @@ a {
     min-width: 140px;
     padding: 12px 27px;
     background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
     border-radius: 999px;
     position: absolute;
     top: 8px;
