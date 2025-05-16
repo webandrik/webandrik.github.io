@@ -89,7 +89,8 @@ a {
     left: 0;
     height: 2px;
     width: 100%;
-    background-color: #fff; 
+    background-color: #fff;
+    transition: transform .4s ease;
 }
 
 .btn-menu::after {
@@ -364,6 +365,16 @@ a {
 
     .btn-menu {
         display: block;
+    }
+
+    .btn-menu--active::before {
+        top: 21px;
+        transform: rotate(45deg);
+    }
+
+    .btn-menu--active::after {
+        top: 21px;
+        transform: rotate(-45deg);
     }
 
     .menu--active {
