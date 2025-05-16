@@ -388,6 +388,10 @@ a {
         margin-bottom: 30px;
     }
 
+    .services__name {
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 667px) {
