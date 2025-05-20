@@ -1,0 +1,39 @@
+/* Blog */
+
+.blog__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__item {
+    max-width: 370px;
+}
+
+.blog-card__title {
+    margin-bottom: 16px;
+    font: 18px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.blog-card__body {
+    padding: 26px 10px 10px;
+}
+
+.blog-card__desc {
+    line-height: 1.6;
+    margin-bottom: 26px;
+}
+
+.blog-card__link {
+    border-bottom: 1px solid #444;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    transition: all .4s ease;
+}
+
+.blog-card__link:hover {
+    border-bottom-color: transparent;
+    color: #000;
+}
