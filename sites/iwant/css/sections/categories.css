@@ -18,6 +18,21 @@
     margin-top: 0;
 }
 
+.categories__img {
+      -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.categories__item:hover .categories__img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
 .categories__link{
     background-color: rgba(29, 28, 31, 0.7);
     padding: 15px 25px;
