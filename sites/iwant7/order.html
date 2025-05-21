@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWANTMORE</title>
+    <link href="https://db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sections/header.css">
+    <link rel="stylesheet" href="css/sections/order.css">
+    <link rel="stylesheet" href="css/sections/footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__nav">
+                <button class="btn-menu" type="button">
+				    <span></span>
+			    </button>
+                <a class="logo" href="#">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <div class="menu">
+                    <div class="menu__item">
+                        <a href="#" class="menu__link">Каталог</a>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#" class="menu__link">Про нас</a>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#" class="menu__link">Доставка і оплата</a>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#" class="menu__link">Контакти</a>
+                    </div>
+                    <div class="menu__item">
+                        <a href="#" class="menu__link">Блог</a>
+                    </div>
+                </div>
+                <ul class="user-controls">
+                    <li class="user-controls__item">
+                        <a href="#" class="user-controls__link user-controls__link--search"></a>
+                    </li>
+                    <li class="user-controls__item">
+                        <a href="#" class="user-controls__link user-controls__link--heart">
+                            <span class="user-controls__num">1</span>
+                        </a>
+                    </li>
+                    <li class="user-controls__item">
+                        <a href="#" class="user-controls__link user-controls__link--basket"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="order section-page">
+        <h2 class="section-title section-title--page">Оформлення замовлення</h2>
+        <div class="container">
+          
+          <div class="order__row">
+
+            <div class="order__user-info">  
+                <div class="order__user-box">
+                    <h4 class="order__title">Платіжні дані</h4>
+                    <div class="inputs-row">
+                        <input class="input-text" type="text" placeholder="Ім’я">
+                        <input class="input-text" type="text" placeholder="Прізвище">
+                    </div>
+                    <div class="inputs-row">
+                         <input class="input-text" type="text" placeholder="Номер телефону">
+                    </div>
+                    <div class="inputs-row">
+                         <input class="input-text" type="mail" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="order__user-box">
+                    <h4 class="order__title">Адреса доставки</h4>
+                    <div class="inputs-row">
+                        <input class="input-text" type="text" placeholder="Оберіть область">
+                    </div>
+                    <div class="inputs-row">
+                         <input class="input-text" type="text" placeholder="Оберіть місто">
+                    </div>
+                    <div class="inputs-row">
+                         <input class="input-text" type="text" placeholder="Оберіть відділення">
+                    </div>
+                    <div class="inputs-row">
+                        <label>
+                            <input class="input-checkbox" type="checkbox">
+                            Потрібна адресна доставка
+                        </label>
+                    </div>
+                    <p>Чи можемо ми у випадку необхідності зв'язатись з Вами за вказаним номером телефону?</p>
+                    <div class="inputs-row">
+                       <textarea class="input-text" rows="4"  name="" id="">Напишіть, будь ласка, Вашу відповідь у цьому полі і залишіть за необхідності свій коментар</textarea>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="order__details">
+                <h4 class="order__title">Ваше замовлення</h4>
+
+                <div class="order__products">
+                    <div class="order__products-item">
+                        <div class="order__products-photo">
+                            <img src="img/photo-thumb.jpg" alt="photo">
+                        </div>
+                        <div class="order__products-name">Безременевий страпон з вібрацією Strap-on-me vibrating violet</div>
+                        <div class="order__products__count">x 1</div>
+                        <div class="order__products-price">5 580 грн</div>
+                    </div>
+                    <div class="order__products-item">
+                        <div class="order__products-photo">
+                            <img src="img/photo-thumb.jpg" alt="photo">
+                        </div>
+                        <div class="order__products-name">Безременевий страпон з вібрацією Strap-on-me vibrating violet</div>
+                        <div class="order__products__count">x 1</div>
+                        <div class="order__products-price">5 580 грн</div>
+                    </div>
+                </div>
+
+                <div class="order__sum">
+                    <span>Підсумок</span>
+                    <span>11 160 грн</span>
+                </div>
+
+                <div class="order__delivery">
+                    <span>Доставка</span>
+                    <span class="order__delivery-desc">За тарифом "Нової Пошти” (безкоштовно при сумі замовлення від 1000 грн)</span>
+                </div>
+
+                <div class="order__promo">
+                    <input class="input-text" type="text" placeholder="Промокод або подарункова карта">
+                    <button class="btn btn--primary">Застосувати</button>
+                </div>
+
+                <div class="order__calc-price">
+                    <span>Загалом</span>
+                    <span>11 160 грн</span>
+                </div>
+
+                <div class="order__payment">
+                    <div class="order__payment-title">спосіб оплати</div>
+                    <label class="order__payment-item">
+                        <input type="radio" name="payment" id="">
+                        Оплата карткою Visa/MasterCard (LiqPay, Apple Pay, Google Pay, Privat24)
+                    </label>
+                    <label class="order__payment-item">
+                        <input type="radio" name="payment" id="">
+                        Готівкою при отриманні
+                    </label>
+                </div>
+
+                <div class="order__agree">
+                    Підтверджуючи замовлення, я приймаю умови 
+                    <a class="order__agree-link" href="#">політики конфіденційності</a>
+                </div>
+
+                <button class="order__submit btn btn--primary">підтвердити замовлення</button>
+            </div>
+
+          </div>
+
+        </div>
+        
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <div class="footer__menu">
+                        <a href="#" class="footer__menu-link">Договір публічної оферти</a>
+                        <a href="#" class="footer__menu-link">Політика конфіденційності</a>
+                    </div>
+                    <div class="footer__desc">Перегляд поданих матеріалів сайту дозволено лише особам старше 18 років</div>
+                    <ul class="footer__pay">
+                        <li class="footer__pay-item">
+                            <img src="img/visa.svg" alt="visa">
+                        </li>
+                        <li class="footer__pay-item">
+                            <img src="img/mastercard.svg" alt="mastercard">
+                        </li>
+                        <li class="footer__pay-item">
+                            <img src="img/liqpay.svg" alt="liqpay">
+                        </li>
+                        <li class="footer__pay-item">
+                            <img src="img/GooglePay.svg" alt="google pay">
+                        </li>
+                        <li class="footer__pay-item">
+                            <img src="img/ApplePay.svg" alt="apple pay">
+                        </li>
+                        <li class="footer__pay-item">
+                            <img src="img/privat24.svg" alt="privat24">
+                        </li>
+                    </ul>
+                    <div class="footer__copy">
+                        <p>© 2023 IWANTMORE</p>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <p>Ми на зв’язку</p>
+                    <p>Пн-Сб, з 10:00 до 19:00</p>
+                </div>
+                <div class="footer__col">
+                    <p><a href="tel:+380679698181">+38 (067) 969-81-81</a></p>
+                    <p><a href="mailto:more@iwantmore.com.ua">more@iwantmore.com.ua</a></p>
+                    <ul class="footer__social">
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <img src="img/youtube.svg" alt="youtube">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <img src="img/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="#" class="footer__social-link">
+                                <img src="img/tiktok.svg" alt="tiktok">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
