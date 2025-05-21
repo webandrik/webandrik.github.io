@@ -1,0 +1,29 @@
+.product-filter {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.product-filter__manufacter {
+    margin-left: 40px;
+}
+
+.product-filter__sort {
+    margin-left: auto;
+}
+
+.btn-catalog {
+    font: 300 24px 'Bahnschrift', sans-serif;
+    text-transform: uppercase;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-catalog::before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url('../../img/icons/menu.svg') no-repeat;
+}

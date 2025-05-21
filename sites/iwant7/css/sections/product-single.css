@@ -1,0 +1,97 @@
+.product p {
+    margin: 20px 0;
+}
+
+.product-details span {
+    font-weight: 600;
+}
+
+.product-details ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.product__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__photo {
+    flex-basis: 590px;
+}
+
+.product__photo img {
+    margin: 0 auto;
+}
+
+.product__info {
+    flex-basis: 610px;
+}
+
+.product__title {
+    font: 300 24px 'Bahnschrift', sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.product__artikul {
+    font-size: 13px;
+    color: #999999;
+    margin-bottom: 38px;
+}
+
+.product__color {
+    margin-bottom: 35px;
+}
+
+.product__color span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product__price {
+    margin-bottom: 20px;
+    font: 300 24px 'Bahnschrift', sans-serif;
+}
+
+.product__buttons {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 64px;
+}
+
+.btn-heart {
+    width: 24px;
+    height: 24px;
+    background: url('../../img/icons/icon-heart.svg') no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.product__features {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product__features-title {
+    flex-basis: 40%;
+    color: #A9A9A9;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.product__features-value {
+   width: 40%;
+   font-size: 15px;
+}
+
+.product__thumbs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product__item  {
+
+}

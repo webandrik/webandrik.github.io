@@ -1,0 +1,48 @@
+.delivery p {
+    margin-bottom: 24px;
+}
+
+.title-h4 {
+    margin: 40px 0;
+    font-size: 20px;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+.delivery__logo {
+    margin-bottom: 24px;
+}
+
+.delivery__info-list {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.delivery__info-item {
+    text-align: center;
+}
+
+.delivery__info-icon {
+    margin-bottom: 24px;
+}
+
+.delivery__info-icon img {
+    margin: 0 auto;
+}
+
+.list-check li {
+    padding-left: 32px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.list-check li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url('../../img/icons/check-icon.svg') no-repeat;
+}

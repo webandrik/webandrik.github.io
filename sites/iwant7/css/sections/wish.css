@@ -1,0 +1,29 @@
+.wish__body {
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.wish__row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #F1F1F1;
+    font-size: 14px;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.wish__delete {
+    width: 28px;
+    height: 28px;
+    border: 2px solid #E4E4E4;
+    border-radius: 50%;
+    color: #E4E4E4;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.wish__title {
+    max-width: 437px;
+}

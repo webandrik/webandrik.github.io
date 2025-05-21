@@ -1,0 +1,22 @@
+.pagination {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+.pagination__link {
+    display: block;
+    padding: 14px 17px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #A9A9A9;
+    border: 1px solid transparent;
+    transition: all .4s ease;
+    line-height: 1;
+}
+
+.pagination__link--active,
+.pagination__link:hover {
+    border-color: #444444;
+    color: #444;
+}

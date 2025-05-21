@@ -1,0 +1,77 @@
+
+
+.breadcrumbs {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.breadcrumbs__link {
+    /* display: block; */
+    height: 100%;
+    /* font-size: 13px; */
+    color: #A9A9A9;
+    padding-right: 24px;
+    position: relative;
+    transition: all .4s ease;
+}
+
+.breadcrumbs__link::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 25%;
+    width: 10px;
+    height: 10px;
+    background: url('../../img/icons/arrow-breadcrumbs.svg') no-repeat;
+}
+
+.breadcrumbs__link:hover {
+    color: #444;
+}
+
+.article {
+    padding-bottom: 120px;
+}
+
+.article__photo {
+    margin-bottom: 64px;
+}
+
+.article__photo img {
+    width: 100%;
+}
+
+.article__body {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.article__title {
+    margin-bottom: 16px;
+    font: 300 34px 'Bahnschrift', sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.article__date {
+    margin-bottom: 40px;
+    color: #A9A9A9;
+}
+
+.title-h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+.article p {
+    margin: 16px 0;
+}
+
+.article img {
+    display: inline-block;
+}

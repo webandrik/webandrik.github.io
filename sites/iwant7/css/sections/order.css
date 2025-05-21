@@ -1,0 +1,140 @@
+.order__row {
+    display: flex;
+    gap: 30px;
+}
+
+.order__user-info {
+    flex-basis: 50%;
+}
+
+.order__details {
+    flex-basis: 50%;
+}
+
+.order__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #323232;
+}
+
+.inputs-row {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.input-text {
+    padding: 13px 12px;
+    border: 2px solid #DDDDDD;
+    border-radius: 2px;
+    min-width: 295px;
+    width: 100%;
+}
+
+.input-text::placeholder {
+    color: #777777;
+}
+
+textarea.input-text {
+    color: inherit;
+}
+
+.order p {
+    margin: 20px 0;
+}
+
+.order__products {
+    margin-bottom: 20px;
+}
+
+.order__products-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    padding: 5px;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.order__products-name {
+    font-size: 13px;
+}
+
+.order__sum {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.order__sum span {
+    font-weight: bold;
+}
+
+.order__delivery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.order__delivery span {
+    max-width: 290px;
+    text-align: right;
+    line-height: 1.4;
+}
+
+.order__delivery-desc {
+    font-size: 13px;
+}
+
+.order__promo {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.order__calc-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 8px;
+    background-color: #F1F1F1;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 34px;
+}
+
+.order__payment {
+    margin-bottom: 40px;
+}
+
+.order__payment-title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.order__payment-item {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.order__agree {
+    margin-bottom: 20px;
+}
+
+.order__agree-link {
+    color: #999999;
+    text-decoration: underline;
+    transition: all .4s ease;
+}
+
+.order__agree-link:hover {
+    text-decoration: none;
+    color: #444;
+}
+
+.order__submit {
+    width: 100%;
+}
