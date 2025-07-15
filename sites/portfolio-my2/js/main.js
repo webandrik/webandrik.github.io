@@ -21,7 +21,7 @@ $(function () {
 
 
     //Клик по пункту меню Home
-    $('.js-home').on('click', function () {
+    $('.js-home, .logo').on('click', function () {
         $('.burger').removeClass('active');
         gsap.to('.menu', .6, { y: '-100%' });
         gsap.to('.header>div', 0, { display: "block" });
