@@ -80,6 +80,51 @@ $(function () {
         gsap.to('.about', 0, { display: "none" });
         gsap.to('.portfolio',0,{display:"none"});
         gsap.to('.contacts',0,{display:"block"});
+     });
+    
+   
+    
+    $(window).on('mousemove', cursormover);
+    const mycursor = $('.cursor');
+    function cursormover(e){
+    
+        gsap.to( mycursor, {
+          x : e.clientX ,
+          y : e.clientY,
+          stagger:.002
+         })
+    }
+
+    $('a, .burger').hover(function () {
+        gsap.to(mycursor, {
+            scale: 1.4,
+            opacity: 1
+            });
+        }, function () {
+            gsap.to( mycursor, {
+            scale:1,
+            opacity: .6
+            });
+        }
+    );
+
+    
+
+    
+});
+
+async function sendForm(e) {
+    e.preventDefault();
+
+    let response = await fetch('mail.php', {
+        method: 'POST',
+        body: new FormData(e.target)
     });
 
-}); 
+    if (response.ok) {
+        let text = await response.text();
+        console.log(text);
+    }
+}
+
+document.querySelector('form').addEventListener('submit', sendForm);
