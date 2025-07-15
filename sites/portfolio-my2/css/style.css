@@ -488,6 +488,10 @@ img {
     padding: 20px;
 }
 
+.about-image>img {
+    border-radius: 5%;
+}
+
 .about-image img {
     max-width: 100%;
 }
