@@ -770,4 +770,8 @@ a {
     .to-top {
         right: 10px;
     }
+
+    .contacts::before {
+        background: linear-gradient(to bottom, transparent, #fff 5%, transparent, #fff 70%);
+    }
 }
