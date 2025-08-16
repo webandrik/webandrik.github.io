@@ -1,0 +1,290 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    background-color: #304E61;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1460px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 17px 11px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn--primary {
+    border-radius: 4px;
+    background-color: #F06E04;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.header__top {
+    padding-top: 60px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.header__nav {
+    position: relative;
+}
+
+.logo {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.header__info {
+    color: #fff;
+}
+
+.header__buttons {
+    display: flex;
+}
+
+.menu {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+}
+
+.menu.active {
+    padding: 0 10px;
+    visibility: visible;
+    left: 0;
+    top: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.menu__item {
+    margin: 24px 0;
+}
+
+.menu__link {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header__info--wide,
+.header__social {
+    display: none;
+}
+
+/* Hamburger */
+
+.hamburger {
+    width: 101px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #ee5508;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+}
+.hamburger > span::before {
+  content: '';
+  top: -8px;
+}
+.hamburger > span::after {
+  content: '';
+  top: 8px;
+}
+
+.hamburger.active > span {
+  transform: rotate(45deg);
+}
+
+.hamburger.active > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+.hamburger.active > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.hamburger.active .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.header__btn {
+  flex: 0 1 100%;
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+  height: 48px;
+  margin-left: 2px;
+  background-color: #ee5508;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Media */
+
+@media(min-width: 991px){
+    
+    .header {
+        padding: 48px 0;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .header__top {
+        padding: 0;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .logo img {
+        display: block;
+    }
+
+    .header,
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header__nav {
+        max-width: 1460px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    .header__buttons {
+        min-width: 296px;
+    }
+
+    .header__top .container {
+        display: flex;
+        text-align: left;
+    }
+
+    .header__info {
+        display: none;
+    }
+
+    .menu {
+        visibility: visible;
+        position: static;
+        display: flex;
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .menu__item {
+        margin: 0 10px 0;
+    }
+
+    .menu__link {
+        font-size: 16px;
+    }
+
+    .header__btn {
+        padding: 12px 16px 12px 36px;
+        border-radius: 4px;
+        height: 36px;
+        position: relative;
+    }
+
+    .header__btn::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 12px;
+        background: url('../img/phone-icon.svg') no-repeat;
+    }
+
+    .header__info--wide {
+        display: block;
+        flex-shrink: 0;
+        color: #ED4E09;
+        font-size: 18px;
+    }
+    
+
+}
+
+@media (min-width: 1360px) {
+   
+    .header__social {
+        display: flex;
+    }
+
+    .header__social-item {
+        margin-right: 24px;
+    }
+
+    .header__social-link {
+        display: block;
+    }
+
+    .header__social-link>img {
+        display: block;
+    }
+}
