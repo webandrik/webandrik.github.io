@@ -1,0 +1,170 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1460px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px;
+    cursor: pointer;
+    line-height: 1;
+    border-radius: 4px;
+}
+
+.btn--primary {
+    position: relative;
+    padding: 12px 16px 12px 36px;
+    background-color: #ED4E09;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.btn--primary::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    width: 12px;
+    height: 12px;
+    background: url('../img/phone-icon.svg') no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 48px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__link {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+}
+
+
+.menu__item {
+    margin-right: 10px;
+}
+
+.header__social {
+    display: flex;
+}
+
+.header__social-item {
+    margin-right: 24px;
+}
+
+.header__phone {
+    color: #ED4E09;
+    font-size: 18px;
+}
+
+.header__phone-link {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+/* Hero */
+
+.hero {
+    padding-top: 138px;
+    min-height: 100vh;
+    background: url('../img/hero-bg.jpg')no-repeat center/cover;
+}
+
+.hero__inner {
+    max-width: 712px;
+    padding-top: 263px;
+    font-weight: 600;
+}
+
+.hero__title {
+    margin-bottom: 12px;
+    font-size: 48px;
+    color: #fff;
+}
+
+.hero__subtitle {
+    margin-bottom: 24px;
+    font-size: 32px;
+    color: #fff;
+}
+
+.hero__list {
+    margin-bottom: 60px;
+    display: flex;
+}
+
+.hero__item {
+    position: relative;
+    margin-right: 40px;
+    padding-right: 40px;
+    color: #ED4E09;
+    text-transform: uppercase;
+}
+
+.hero__item:not(:last-child):after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: #ED4E09;
+    border-radius: 50%;
+}
+
+.hero__buttons {
+    display: flex;
+    justify-content: space-between;
+}
